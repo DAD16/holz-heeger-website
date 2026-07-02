@@ -51,7 +51,20 @@
   .nav-cta{display:flex;align-items:center;gap:18px;}
   .nav-phone{color:var(--birch);text-decoration:none;font-weight:600;font-size:.93rem;white-space:nowrap;}
   .nav-phone small{display:block;font-weight:400;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--paper-dk);}
-  @media (max-width:920px){.nav-links{display:none;}.nav-phone small{display:none;}}
+  @media (max-width:920px){
+    .nav-links{display:none;}
+    .nav-phone{display:none;}
+    .brand{min-width:0;}
+    .brand .mark{width:44px;height:34px;}
+    .brand b{font-size:1.12rem;}
+    .nav-cta .btn{padding:10px 16px;font-size:.9rem;white-space:nowrap;}
+  }
+  @media (max-width:560px){
+    .wrap{padding-inline:16px;}
+    .brand .sub{display:none;}
+    .brand .mark{width:40px;height:31px;}
+    .nav-cta .btn{padding:9px 13px;font-size:.84rem;}
+  }
 
   /* HERO with real firewood photo */
   .hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;color:var(--birch);overflow:hidden;}
